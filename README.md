@@ -9,7 +9,7 @@ If not, go to <http://localhost:5173/index.html>
 
 ![Hello World example](screenshot.jpg)
 
-## Using Peripleo in your own project
+## Using Peripleo in Your Own Project
 
 Install the Peripleo base library and mapLibre integration module.
 

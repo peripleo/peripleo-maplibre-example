@@ -1,6 +1,10 @@
 import { Peripleo, Controls } from '@peripleo/peripleo';
 import { Map, Zoom } from '@peripleo/maplibre';
 
+// Essential styles
+import '@peripleo/maplibre/peripleo-maplibre.css';
+
+// Default theme
 import '@peripleo/peripleo/default-theme';
 
 // A basic raster style using OSM X/Y/Z tiles as a source

@@ -1,0 +1,24 @@
+{
+  "name": "peripleo-maplibre-example",
+  "private": true,
+  "author": "Rainer Simon",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "test": "vitest",
+    "build": "vite build --mode production",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.46",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.10"
+  },
+  "dependencies": {
+    "@peripleo/maplibre": "^0.3.0",
+    "@peripleo/peripleo": "^0.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

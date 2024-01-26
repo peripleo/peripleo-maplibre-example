@@ -17,13 +17,13 @@ Install the Peripleo base library and mapLibre integration module.
 npm install @peripleo/peripleo @peripleo/maplibre
 ```
 
-- Import base styles and (optionally) the default theme
+- Import base styles and (optionally) the default UI controls theme
 - Wrap your app with the `<Peripleo>` component. This will provides access to Peripleo's utility hooks.
 - Create a `Map` instance.
 
 ```tsx
-import { Peripleo } from '@peripleo/peripleo';
-import { Map } from '@peripleo/maplibre';
+import { Peripleo, Controls } from '@peripleo/peripleo';
+import { Map, Zoom } from '@peripleo/maplibre';
 
 // Essential base styles
 import '@peripleo/maplibre/peripleo-maplibre.css';
@@ -36,7 +36,9 @@ export const App = () => {
   return (
     <Peripleo>
       <Map style="https://openmaptiles.github.io/osm-bright-gl-style/style-cdn.json">
-        
+        <Controls position="topright">
+          <Zoom />
+        </Controls>
       </Map>
     </Peripleo>
   )

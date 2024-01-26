@@ -18,7 +18,7 @@ npm install @peripleo/peripleo @peripleo/maplibre
 ```
 
 - Import base styles and (optionally) the default theme
-- Wrap your app with the `<Peripleo>` component. This will provides access to Peripleo's tility hooks.
+- Wrap your app with the `<Peripleo>` component. This will provides access to Peripleo's utility hooks.
 - Create a `Map` instance.
 
 ```tsx

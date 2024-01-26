@@ -1,5 +1,7 @@
-import { Peripleo } from '@peripleo/peripleo';
-import { Map } from '@peripleo/maplibre';
+import { Peripleo, Controls } from '@peripleo/peripleo';
+import { Map, Zoom } from '@peripleo/maplibre';
+
+import '@peripleo/peripleo/default-theme';
 
 // A basic raster style using OSM X/Y/Z tiles as a source
 const style = {
@@ -26,7 +28,11 @@ export const App = () => {
 
   return (
     <Peripleo>
-      <Map style={style} />
+      <Map style={style}>
+        <Controls position="topright">
+          <Zoom />
+        </Controls>
+      </Map>
     </Peripleo>
   )
 
